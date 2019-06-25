@@ -10,6 +10,9 @@ import (
 )
 
 func main() {
+
+	lib.Login("20155324", "dongyuchen0801%")
+
 	app := iris.New()
 	app.Logger().SetLevel("debug")
 	// Optionally, add two built'n handlers

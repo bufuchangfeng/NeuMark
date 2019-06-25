@@ -29,7 +29,7 @@ func Login(id, password string) {
 
 	defer res.Body.Close()
 
-	// body, _ := ioutil.ReadAll(res.Body)
+	body, _ := ioutil.ReadAll(res.Body)
 	// fmt.Println(string(body))
 
 	var reg1 = regexp.MustCompile("input type=\"hidden\" id=\"lt\" name=\"lt\" value=\"(.*?)\" />")
