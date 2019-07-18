@@ -8,6 +8,6 @@ package models
 type Category struct{
 	ID int `gorm:"primary_key"`
 	Name string
-	Category Category `gorm:"ForeignKey:CategoryId`
-	CategoryId int
+	Category Category `gorm:"ForeignKey:CategoryID`
+	CategoryID int
 }

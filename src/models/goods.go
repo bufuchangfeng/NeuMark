@@ -15,14 +15,16 @@ import "time"
 type Goods struct{
 	ID int `gorm:primary_key`
 	Name string
-	Category Category `gorm:"ForeignKey:CategoryId`
-	CategoryId int
+	Category Category `gorm:"ForeignKey:CategoryID`
+	CategoryID int
 	Description string
 	// images
 	Price string
 	View int
 	Status string
-	User User `gorm:"ForeignKey:UserId`
-	UserId int
+	User User `gorm:"ForeignKey:UserID`
+	UserID int
 	CreatedAt time.Time
+
+	Comments []Comment
 }

@@ -29,5 +29,8 @@ type User struct {
 
 	LoginAt time.Time
 	CreatedAt time.Time
+
+	Goods_ []Goods
+	Comments []Comment
 }
 
