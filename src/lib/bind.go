@@ -30,7 +30,6 @@ func Login(id, password string) {
 	defer res.Body.Close()
 
 	body, _ := ioutil.ReadAll(res.Body)
-	// fmt.Println(string(body))
 
 	var reg1 = regexp.MustCompile("input type=\"hidden\" id=\"lt\" name=\"lt\" value=\"(.*?)\" />")
 	var reg2 = regexp.MustCompile("input type=\"hidden\" name=\"execution\" value=\"(.*?)\" />")
@@ -58,10 +57,6 @@ func Login(id, password string) {
 
 	defer res.Body.Close()
 
-	// body, _ = ioutil.ReadAll(res.Body)
-	// fmt.Println(string(body))
-	// fmt.Println(res.StatusCode)
-
 	req, err = http.NewRequest("GET", "https://pass-443.webvpn.neu.edu.cn/tpass/login?service=http%3A%2F%2F219-216-96-4.webvpn.neu.edu.cn%2Feams%2FhomeExt.action", nil)
 	if nil != err {
 		fmt.Println(err)
@@ -74,9 +69,6 @@ func Login(id, password string) {
 	}
 
 	defer res.Body.Close()
-
-	// body, _ = ioutil.ReadAll(res.Body)
-	// fmt.Println(string(body))
 
 	lt = reg1.FindAllStringSubmatch(string(body), -1)[0][1]
 	execution = reg2.FindAllStringSubmatch(string(body), -1)[0][1]
@@ -101,8 +93,6 @@ func Login(id, password string) {
 
 	defer res.Body.Close()
 
-	// body, _ = ioutil.ReadAll(res.Body)
-	// fmt.Println(string(body))
 
 	req, err = http.NewRequest("GET", "https://219-216-96-4.webvpn.neu.edu.cn/eams/stdDetail.action?", nil)
 	if nil != err {
