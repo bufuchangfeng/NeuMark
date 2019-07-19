@@ -126,5 +126,4 @@ func Login(id, password string) {
 	campus := r[17][1]
 	class := r[18][1]
 	models.Db.Create(&models.User{Name:name, Sex:sex, Sid:id, Grade:grade, Institute:institute, Major:major, Campus:campus, Class:class, CreatedAt:time.Now()})
-
 }

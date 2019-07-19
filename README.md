@@ -50,6 +50,19 @@
 * ColorUI https://github.com/weilanwl/ColorUI
 * WeUI https://github.com/Tencent/weui-wxss
 * iView https://github.com/TalkingData/iview-weapp
-* ZanUI https://github.com/youzan/zanui-weapp
+* ZanUI https://github.com/youzan/zanui-weapp 
 * MinUI https://github.com/meili/minui
 
+
+## 商品类别
+电子产品： 手机 耳机 u盘 电脑 相机
+书籍： 专业书 课外书
+生活用品： 护肤品 衣服 鞋
+## 未来规划
+店铺 和学校的文创、二手书店合作
+
+## 功能拓展
+搜索
+图片
+高并发
+前端美化

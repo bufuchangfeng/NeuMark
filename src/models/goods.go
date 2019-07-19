@@ -21,7 +21,7 @@ type Goods struct{
 	// images
 	Price string
 	View int
-	Status string
+	// Status string
 	User User `gorm:"ForeignKey:UserID`
 	UserID int
 	CreatedAt time.Time
