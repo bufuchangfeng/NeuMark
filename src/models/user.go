@@ -32,5 +32,6 @@ type User struct {
 
 	Goods_ []Goods
 	Comments []Comment
+	Buys []Buy
 }
 

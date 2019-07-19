@@ -1,17 +1,18 @@
 package main
 
 import (
-	"./src/lib"
-
 	"github.com/kataras/iris"
 
 	"github.com/kataras/iris/middleware/logger"
 	"github.com/kataras/iris/middleware/recover"
+
+	"./src/controller"
+	"./src/models"
 )
 
 func main() {
 
-	lib.Login("20182498", "22001x")
+	models.Db.AutoMigrate(&models.User{})
 
 	app := iris.New()
 	app.Logger().SetLevel("debug")
@@ -20,6 +21,8 @@ func main() {
 	// and log the requests to the terminal.
 	app.Use(recover.New())
 	app.Use(logger.New())
+
+	app.Post("/bind", controller.Bind)
 
 	app.Run(iris.Addr(":80"), iris.WithoutServerError(iris.ErrServerClosed))
 

@@ -8,6 +8,8 @@ import (
 	"regexp"
 	"strconv"
 	"strings"
+	"../models"
+	"time"
 )
 
 func Login(id, password string) {
@@ -110,4 +112,19 @@ func Login(id, password string) {
 	body, _ = ioutil.ReadAll(res.Body)
 
 	fmt.Println(string(body))
+
+	reg3 := regexp.MustCompile("<td>(.*?)</td>")
+	r := reg3.FindAllStringSubmatch(string(body), -1)
+
+	// 错误处理函数 比如登录失败
+
+	name := r[0][1]
+	sex := r[2][1]
+	grade := r[3][1]
+	institute := r[8][1]
+	major := r[9][1]
+	campus := r[17][1]
+	class := r[18][1]
+	models.Db.Create(&models.User{Name:name, Sex:sex, Sid:id, Grade:grade, Institute:institute, Major:major, Campus:campus, Class:class, CreatedAt:time.Now()})
+
 }
