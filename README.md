@@ -66,3 +66,9 @@
 图片
 高并发
 前端美化
+
+## 开发工具
+数据库可视化： navicat premium
+IDE： GoLand
+前端： 微信小程序开发者工具
+后端接口测试： postman

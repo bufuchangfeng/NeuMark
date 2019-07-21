@@ -1,14 +1,11 @@
 package main
 
 import (
-	"github.com/kataras/iris"
-	"github.com/kataras/iris/core/host"
-	"github.com/kataras/iris/middleware/logger"
-	"github.com/kataras/iris/middleware/recover"
-	"net/url"
-
 	"./src/controller"
 	"./src/models"
+	"github.com/kataras/iris"
+	"github.com/kataras/iris/middleware/logger"
+	"github.com/kataras/iris/middleware/recover"
 )
 
 func main() {
@@ -31,12 +28,12 @@ func main() {
 
 	// to start a new server listening at :80 and redirects
 	// to the secure address, then:
-	target, _ := url.Parse("https://127.0.0.1:443")
-	go host.NewProxy("127.0.0.1:80", target).ListenAndServe()
+	//target, _ := url.Parse("https://127.0.0.1:443")
+	//go host.NewProxy("127.0.0.1:80", target).ListenAndServe()
+	//
+	//// start the server (HTTPS) on port 443, this is a blocking func,
+	//// you can use iris.AutoTLS for letsencrypt if you want so.
+	//app.Run(iris.TLS("127.0.0.1:443", "neumark.pem", "neumark.key"))
 
-	// start the server (HTTPS) on port 443, this is a blocking func,
-	// you can use iris.AutoTLS for letsencrypt if you want so.
-	app.Run(iris.TLS("127.0.0.1:443", "neumark.pem", "neumark.key"))
-
-	// app.Run(iris.Addr(":80"), iris.WithoutServerError(iris.ErrServerClosed))
+	app.Run(iris.Addr(":80"), iris.WithoutServerError(iris.ErrServerClosed))
 }
