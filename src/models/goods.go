@@ -18,9 +18,9 @@ type Goods struct{
 	Category Category `gorm:"ForeignKey:CategoryID`
 	CategoryID int
 	Description string
-	// images
+	images string
 	Price string
-	View int
+	// View int
 	// Status string
 	User User `gorm:"ForeignKey:UserID`
 	UserID int
