@@ -20,6 +20,7 @@ type Goods struct{
 	Description string
 	images string
 	Price string
+	Hash string
 	// View int
 	// Status string
 	User User `gorm:"ForeignKey:UserID`
@@ -27,4 +28,5 @@ type Goods struct{
 	CreatedAt time.Time
 
 	Comments []Comment
+	Images []Image
 }
