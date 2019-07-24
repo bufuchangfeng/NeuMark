@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33025bdd-3392-43c6-a979-3b650ed649a8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/controller/image.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/image.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/id_cache.db-shm" beforeDir="false" afterPath="$PROJECT_DIR$/id_cache.db-shm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/id_cache.db-wal" beforeDir="false" afterPath="$PROJECT_DIR$/id_cache.db-wal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/goods.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/goods.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/goods.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/goods.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/image.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/image.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,10 +41,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/controller/image.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="798">
-              <caret line="54" column="45" selection-start-line="54" selection-start-column="45" selection-end-line="54" selection-end-column="45" />
+            <state relative-caret-position="284">
+              <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
               <folding>
-                <element signature="e#20#98#0" expanded="true" />
+                <element signature="e#20#100#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -66,7 +62,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controller/goods.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
+            <state relative-caret-position="371">
               <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
               <folding>
                 <element signature="e#20#79#0" expanded="true" />
@@ -132,16 +128,16 @@
         <option value="$PROJECT_DIR$/src/controller/controller.go" />
         <option value="$PROJECT_DIR$/main.go" />
         <option value="$PROJECT_DIR$/src/models/image.go" />
-        <option value="$PROJECT_DIR$/src/controller/image.go" />
         <option value="$PROJECT_DIR$/src/controller/goods.go" />
+        <option value="$PROJECT_DIR$/src/controller/image.go" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-162" />
-    <option name="y" value="49" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="392" />
+    <option name="y" value="255" />
     <option name="width" value="1144" />
-    <option name="height" value="1005" />
+    <option name="height" value="870" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -220,10 +216,10 @@
     </option>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-262" y="68" width="1144" height="1005" extended-state="0" />
+    <frame x="65" y="-6" width="1855" height="1086" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24635036" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14941892" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -237,7 +233,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.11702128" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.47959185" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -396,7 +392,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/goods.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
+        <state relative-caret-position="371">
           <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
           <folding>
             <element signature="e#20#79#0" expanded="true" />
@@ -406,10 +402,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/image.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="54" column="45" selection-start-line="54" selection-start-column="45" selection-end-line="54" selection-end-column="45" />
+        <state relative-caret-position="284">
+          <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
           <folding>
-            <element signature="e#20#98#0" expanded="true" />
+            <element signature="e#20#100#0" expanded="true" />
           </folding>
         </state>
       </provider>
