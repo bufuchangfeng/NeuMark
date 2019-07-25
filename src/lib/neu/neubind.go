@@ -1,4 +1,4 @@
-package lib
+package neu
 
 import (
 	"fmt"
@@ -8,11 +8,11 @@ import (
 	"regexp"
 	"strconv"
 	"strings"
-	"../models"
+	"../../models"
 	"time"
 )
 
-func Login(id, password string) {
+func NEULogin(id, password string) {
 	jar, _ := cookiejar.New(nil)
 	client := &http.Client{
 		Jar: jar,
