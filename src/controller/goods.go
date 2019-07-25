@@ -27,5 +27,24 @@ func AddGoods(ctx iris.Context){
 
 	var dict = map[string]int{"goods_id":goods.ID}
 	ctx.JSON(dict)
+}
 
+func GetGoods(ctx iris.Context){
+	category_id := ctx.FormValue("category_id")
+	page := ctx.FormValue("page")
+	page_size := ctx.FormValue("page_size")
+
+	var goods []models.Goods
+
+	// page从0开始
+	pageint, _ := strconv.Atoi(page)
+
+	page_sizeint, _ := strconv.Atoi(page_size)
+	if category_id == "-1"{
+		models.Db.Offset(pageint * page_sizeint).Limit(page_size).Order("id desc").Find(&goods)
+	}else{
+		models.Db.Where("category_id = ?", category_id).Offset(pageint * page_sizeint).Limit(page_size).Order("id desc").Find(&goods)
+	}
+
+	ctx.JSON(goods)
 }
