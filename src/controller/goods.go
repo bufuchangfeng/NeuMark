@@ -6,6 +6,7 @@ import (
 	"strconv"
 	"time"
 )
+
 func GetSubCategoryGoods(ctx iris.Context){
 	categoryId := ctx.FormValue("id")
 	var Goods_ []models.Goods
@@ -47,4 +48,10 @@ func GetGoods(ctx iris.Context){
 	}
 
 	ctx.JSON(goods)
+}
+
+func GetAGoods(ctx iris.Context){
+	goods_id := ctx.FormValue("goods_id")
+
+	var goods []models.Goods
 }

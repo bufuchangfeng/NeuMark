@@ -12,7 +12,7 @@ import (
 	"time"
 )
 
-func NEULogin(id, password string) {
+func NEULogin(id, password string)(u models.User) {
 	jar, _ := cookiejar.New(nil)
 	client := &http.Client{
 		Jar: jar,
@@ -125,5 +125,9 @@ func NEULogin(id, password string) {
 	major := r[9][1]
 	campus := r[17][1]
 	class := r[18][1]
-	models.Db.Create(&models.User{Name:name, Sex:sex, Sid:id, Grade:grade, Institute:institute, Major:major, Campus:campus, Class:class, CreatedAt:time.Now()})
+
+	user := models.User{Name:name, Sex:sex, Sid:id, Grade:grade, Institute:institute, Major:major, Campus:campus, Class:class, CreatedAt:time.Now()}
+	models.Db.Create(&user)
+
+	return user
 }

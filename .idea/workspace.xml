@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33025bdd-3392-43c6-a979-3b650ed649a8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lib/hdu/hdubind.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/id_cache.db-shm" beforeDir="false" afterPath="$PROJECT_DIR$/id_cache.db-shm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/id_cache.db-wal" beforeDir="false" afterPath="$PROJECT_DIR$/id_cache.db-wal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/goods.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/goods.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/user.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/bind.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/neu/neubind.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/neu/neubind.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/neu/neubind.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,14 +30,14 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Desktop/hello.go">
+        <entry file="file://$PROJECT_DIR$/src/controller/goods.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="86" column="5" lean-forward="true" selection-end-line="99" selection-end-column="1" />
+            <state relative-caret-position="589">
+              <caret line="55" column="28" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="28" />
               <folding>
-                <element signature="e#14#27#0" expanded="true" />
+                <element signature="e#20#89#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -46,8 +46,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lib/neu/neubind.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2090">
-              <caret line="113" column="29" lean-forward="true" selection-start-line="111" selection-start-column="4" selection-end-line="113" selection-end-column="29" />
+            <state relative-caret-position="2451">
+              <caret line="129" column="22" selection-start-line="129" selection-start-column="22" selection-end-line="129" selection-end-column="22" />
               <folding>
                 <element signature="e#13#133#0" expanded="true" />
               </folding>
@@ -55,14 +55,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/lib/hdu/hdubind.go">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/models/user.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-              <folding>
-                <element signature="e#15#134#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="399">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/controller/user.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -105,20 +111,20 @@
         <option value="$PROJECT_DIR$/src/models/image.go" />
         <option value="$PROJECT_DIR$/src/controller/image.go" />
         <option value="$PROJECT_DIR$/main.go" />
-        <option value="$PROJECT_DIR$/src/controller/goods.go" />
         <option value="$PROJECT_DIR$/src/lib/neu/bind.go" />
+        <option value="$USER_HOME$/Desktop/hello.go" />
+        <option value="$PROJECT_DIR$/src/lib/hdu/hdubind.go" />
+        <option value="$PROJECT_DIR$/src/controller/goods.go" />
         <option value="$PROJECT_DIR$/src/lib/neu/neubind.go" />
         <option value="$PROJECT_DIR$/src/controller/user.go" />
-        <option value="$PROJECT_DIR$/../Desktop/hello.go" />
-        <option value="$PROJECT_DIR$/src/lib/hdu/hdubind.go" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="551" />
-    <option name="y" value="24" />
-    <option name="width" value="1270" />
-    <option name="height" value="1017" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="248" />
+    <option name="y" value="30" />
+    <option name="width" value="1536" />
+    <option name="height" value="1023" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -154,20 +160,6 @@
               <item name="NeuMark" type="b2602c69:ProjectViewProjectNode" />
               <item name="NeuMark" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="hdu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NeuMark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NeuMark" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="neu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NeuMark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NeuMark" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -194,6 +186,9 @@
     <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/lib/hdu" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/lib/neu" />
       <recent name="$PROJECT_DIR$" />
@@ -212,10 +207,10 @@
     </option>
   </component>
   <component name="ToolWindowManager">
-    <frame x="551" y="24" width="1270" height="1017" extended-state="0" />
+    <frame x="65" y="-6" width="1855" height="1086" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18657938" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13115661" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -229,7 +224,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.23929748" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.11632653" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -262,7 +257,7 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/controller.go" />
-    <entry file="file://$PROJECT_DIR$/../go/src/github.com/jinzhu/gorm/main.go">
+    <entry file="file://$USER_HOME$/go/src/github.com/jinzhu/gorm/main.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="123">
           <caret line="350" selection-start-line="350" selection-end-line="350" />
@@ -304,13 +299,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/user.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
@@ -363,23 +351,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/goods.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/user.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-          <folding>
-            <element signature="e#20#67#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
@@ -390,9 +361,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Desktop/hello.go">
+    <entry file="file://$USER_HOME$/Desktop/hello.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
+        <state relative-caret-position="1046">
           <caret line="86" column="5" lean-forward="true" selection-end-line="99" selection-end-column="1" />
           <folding>
             <element signature="e#14#27#0" expanded="true" />
@@ -400,23 +371,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/hdu/des.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/hdu/hdubind.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1124">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="e#15#134#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/goods.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="55" column="28" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="28" />
+          <folding>
+            <element signature="e#20#89#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/user.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/lib/neu/neubind.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2090">
-          <caret line="113" column="29" lean-forward="true" selection-start-line="111" selection-start-column="4" selection-end-line="113" selection-end-column="29" />
+        <state relative-caret-position="2451">
+          <caret line="129" column="22" selection-start-line="129" selection-start-column="22" selection-end-line="129" selection-end-column="22" />
           <folding>
             <element signature="e#13#133#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/hdu/hdubind.go">
+    <entry file="file://$PROJECT_DIR$/src/controller/user.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="e#15#134#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="95">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
         </state>
       </provider>
     </entry>
