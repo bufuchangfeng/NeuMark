@@ -51,7 +51,7 @@ func GetGoods(ctx iris.Context){
 }
 
 func GetAGoods(ctx iris.Context){
-	goods_id := ctx.FormValue("goods_id")
+	// goods_id := ctx.FormValue("goods_id")
 
-	var goods []models.Goods
+	// var goods []models.Goods
 }
