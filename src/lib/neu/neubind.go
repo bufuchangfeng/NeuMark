@@ -118,16 +118,19 @@ func NEULogin(id, password string)(u models.User) {
 
 	// 错误处理函数 比如登录失败
 
-	name := r[0][1]
-	sex := r[2][1]
-	grade := r[3][1]
-	institute := r[8][1]
-	major := r[9][1]
-	campus := r[17][1]
-	class := r[18][1]
+	if len(r) >= 18  {
+		name := r[0][1]
+		sex := r[2][1]
+		grade := r[3][1]
+		institute := r[8][1]
+		major := r[9][1]
+		campus := r[17][1]
+		class := r[18][1]
 
-	user := models.User{Name:name, Sex:sex, Sid:id, Grade:grade, Institute:institute, Major:major, Campus:campus, Class:class, CreatedAt:time.Now()}
-	models.Db.Create(&user)
+		user := models.User{Name:name, Sex:sex, Sid:id, Grade:grade, Institute:institute, Major:major, Campus:campus, Class:class, CreatedAt:time.Now()}
+		models.Db.Create(&user)
 
-	return user
+		return user
+	}
+	return
 }

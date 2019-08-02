@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="33025bdd-3392-43c6-a979-3b650ed649a8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/id_cache.db-shm" beforeDir="false" afterPath="$PROJECT_DIR$/id_cache.db-shm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/id_cache.db-wal" beforeDir="false" afterPath="$PROJECT_DIR$/id_cache.db-wal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/goods.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/goods.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/user.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/neu/neubind.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/neu/neubind.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,23 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/goods.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
-              <caret line="55" column="28" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="28" />
-              <folding>
-                <element signature="e#20#89#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/lib/neu/neubind.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2451">
-              <caret line="129" column="22" selection-start-line="129" selection-start-column="22" selection-end-line="129" selection-end-column="22" />
+            <state relative-caret-position="778">
+              <caret line="134" column="11" selection-start-line="134" selection-start-column="11" selection-end-line="134" selection-end-column="11" />
               <folding>
                 <element signature="e#13#133#0" expanded="true" />
               </folding>
@@ -56,15 +40,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/models/user.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/controller/user.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="95">
@@ -115,23 +90,22 @@
         <option value="$USER_HOME$/Desktop/hello.go" />
         <option value="$PROJECT_DIR$/src/lib/hdu/hdubind.go" />
         <option value="$PROJECT_DIR$/src/controller/goods.go" />
-        <option value="$PROJECT_DIR$/src/lib/neu/neubind.go" />
         <option value="$PROJECT_DIR$/src/controller/user.go" />
+        <option value="$PROJECT_DIR$/src/lib/neu/neubind.go" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="248" />
-    <option name="y" value="30" />
-    <option name="width" value="1536" />
-    <option name="height" value="1023" />
+    <option name="x" value="685" />
+    <option name="y" value="27" />
+    <option name="width" value="870" />
+    <option name="height" value="1044" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -160,12 +134,14 @@
               <item name="NeuMark" type="b2602c69:ProjectViewProjectNode" />
               <item name="NeuMark" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="neu" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -210,7 +186,7 @@
     <frame x="65" y="-6" width="1855" height="1086" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13115661" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1283896" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -224,7 +200,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.11632653" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.16836734" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -351,26 +327,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
-          <folding>
-            <element signature="e#14#178#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/hello.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1046">
-          <caret line="86" column="5" lean-forward="true" selection-end-line="99" selection-end-column="1" />
-          <folding>
-            <element signature="e#14#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Desktop/hello.go" />
     <entry file="file://$PROJECT_DIR$/src/lib/hdu/des.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -384,9 +341,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/user.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/goods.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
+        <state relative-caret-position="614">
           <caret line="55" column="28" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="28" />
           <folding>
             <element signature="e#20#89#0" expanded="true" />
@@ -394,19 +358,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/user.go">
+    <entry file="file://$PROJECT_DIR$/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/neu/neubind.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2451">
-          <caret line="129" column="22" selection-start-line="129" selection-start-column="22" selection-end-line="129" selection-end-column="22" />
+        <state relative-caret-position="494">
+          <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
           <folding>
-            <element signature="e#13#133#0" expanded="true" />
+            <element signature="e#14#178#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -415,6 +372,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/neu/neubind.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="778">
+          <caret line="134" column="11" selection-start-line="134" selection-start-column="11" selection-end-line="134" selection-end-column="11" />
+          <folding>
+            <element signature="e#13#133#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
