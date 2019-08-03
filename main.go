@@ -34,7 +34,7 @@ func main() {
 	//
 	//// start the server (HTTPS) on port 443, this is a blocking func,
 	//// you can use iris.AutoTLS for letsencrypt if you want so.
-	// app.Run(iris.TLS("127.0.0.1:443", "neumark.pem", "neumark.key"))
+	app.Run(iris.TLS("0.0.0.0:443", "neumark.pem", "neumark.key"))
 
-	app.Run(iris.Addr(":80"), iris.WithoutServerError(iris.ErrServerClosed))
+	// app.Run(iris.Addr(":80"), iris.WithoutServerError(iris.ErrServerClosed))
 }
