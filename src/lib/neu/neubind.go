@@ -127,10 +127,17 @@ func NEULogin(id, password string)(u models.User) {
 		campus := r[17][1]
 		class := r[18][1]
 
-		user := models.User{Name:name, Sex:sex, Sid:id, Grade:grade, Institute:institute, Major:major, Campus:campus, Class:class, CreatedAt:time.Now(), LoginAt:time.Now()}
-		models.Db.Create(&user)
+		tempuser := models.User{}
 
-		return user
+		models.Db.Where("sid = ?", id).First(&tempuser)
+
+		if tempuser.Name != "" && tempuser.Grade != ""{
+			return tempuser
+		} else {
+			user := models.User{Name:name, Sex:sex, Sid:id, Grade:grade, Institute:institute, Major:major, Campus:campus, Class:class, CreatedAt:time.Now(), LoginAt:time.Now()}
+			models.Db.Create(&user)
+			return user
+		}
 	}
 	return
 }
