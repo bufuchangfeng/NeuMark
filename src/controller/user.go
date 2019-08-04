@@ -4,6 +4,8 @@ import (
 	"fmt"
 	"github.com/kataras/iris"
 	"../lib/neu"
+	"../models"
+	"strconv"
 )
 
 func Bind(ctx iris.Context){
@@ -16,3 +18,28 @@ func Bind(ctx iris.Context){
 
 	ctx.JSON(user)
 }
+
+
+func GetUserInfo(ctx iris.Context){
+	user_id := ctx.FormValue("user_id")
+
+	user := &models.User{}
+
+	models.Db.Where("id = ?", user_id).First(&user)
+
+	ctx.JSON(user)
+}
+
+func UpdateUserInfo(ctx iris.Context){
+	user_id := ctx.FormValue("user_id")
+	wechat := ctx.FormValue("wechat")
+	phone := ctx.FormValue("phone")
+	qq := ctx.FormValue("qq")
+
+	user_id_str, _ := strconv.Atoi(user_id)
+	user := models.User{ID:user_id_str}
+	models.Db.Where("id = ?", user_id).First(&user)
+
+	models.Db.Model(&user).Updates(map[string]interface{}{"phone": phone, "wechat": wechat, "qq": qq})
+}
+
