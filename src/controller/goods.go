@@ -1,8 +1,8 @@
 package controller
 
 import (
-	"github.com/kataras/iris"
 	"../models"
+	"github.com/kataras/iris"
 	"strconv"
 	"time"
 )
@@ -20,11 +20,16 @@ func AddGoods(ctx iris.Context){
 	name := ctx.FormValue("name")
 	description := ctx.FormValue("description")
 	price := ctx.FormValue("price")
+	userID, _ := strconv.Atoi(ctx.FormValue("user_id"))
+
 	categoryID, _ := strconv.Atoi(ctx.FormValue("category_id"))
 
-	goods := &models.Goods{Name:name, Description:description, Price:price, CreatedAt:time.Now(), CategoryID:categoryID}
+	goods := &models.Goods{Name:name, Description:description, Price:price, CreatedAt:time.Now(), CategoryID:categoryID, UserID:userID}
 	// user category 学习gorm之后再回来修改
 	models.Db.Create(goods)
+
+	sell := &models.Sell{UserID:userID, GoodsID:goods.ID, CreatedAt:time.Now()}
+	models.Db.Create(sell)
 
 	var dict = map[string]int{"goods_id":goods.ID}
 	ctx.JSON(dict)
@@ -50,8 +55,16 @@ func GetGoods(ctx iris.Context){
 	ctx.JSON(goods)
 }
 
-func GetAGoods(ctx iris.Context){
-	// goods_id := ctx.FormValue("goods_id")
+func GetGoodsDetail(ctx iris.Context){
+	goods_id, _ := strconv.Atoi(ctx.FormValue("goods_id"))
 
-	// var goods []models.Goods
+	goods := &models.Goods{}
+
+	models.Db.Where("id = ?", goods_id).First(goods)
+
+	models.Db.Where("id = ?", goods.UserID).First(&goods.User)
+
+	models.Db.Where("goods_id = ?", goods_id).Find(goods.Images)
+
+	ctx.JSON(goods)
 }

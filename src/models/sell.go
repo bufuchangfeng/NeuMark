@@ -2,10 +2,9 @@ package models
 
 import "time"
 
-// 后期加入
-type Collect struct{
+type Sell struct {
 	ID int `gorm:primary_key`
 	UserID int
 	GoodsID int
-	Time time.Time
+	CreatedAt time.Time
 }

@@ -1,8 +1,12 @@
 package models
 
+import "time"
+
+
+// 后期加入
 type Buy struct{
 	ID int `gorm:primary_key`
 	UserID int
-	Goods Goods `gorm:ForeignKey:GoodsID`
 	GoodsID int
+	Time time.Time
 }

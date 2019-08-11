@@ -1,5 +1,7 @@
 package models
 
+import "time"
+
 //评论id
 //商品id
 //发布人id
@@ -10,4 +12,5 @@ type Comment struct{
 	UserID int
 	GoodsID int
 	Content string
+	Time time.Time
 }

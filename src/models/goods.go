@@ -23,10 +23,14 @@ type Goods struct{
 	Hash string
 	// View int
 	// Status string
-	User User `gorm:"ForeignKey:UserID`
+	User User
 	UserID int
 	CreatedAt time.Time
 
-	Comments []Comment
+	Sells []Sell	`gorm:"FOREIGNKEY:GoodsID;ASSOCIATION_FOREIGNKEY:ID"`
+	Comments []Comment `gorm:"FOREIGNKEY:GoodsID;ASSOCIATION_FOREIGNKEY:ID"`
+	Buys []Buy		`gorm:"FOREIGNKEY:GoodsID;ASSOCIATION_FOREIGNKEY:ID"`
+	Collects []Collect `gorm:"FOREIGNKEY:GoodsID;ASSOCIATION_FOREIGNKEY:ID"`
+
 	Images []Image
 }

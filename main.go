@@ -10,7 +10,8 @@ import (
 
 func main() {
 
-	models.Db.AutoMigrate(&models.User{}, &models.Category{}, &models.Goods{}, &models.Image{}, &models.Suggestion{})
+	models.Db.AutoMigrate(&models.User{}, &models.Category{}, &models.Goods{}, &models.Image{},
+	&models.Suggestion{}, &models.Sell{}, &models.Buy{}, &models.Collect{}, &models.Comment{})
 
 	app := iris.New()
 	app.Logger().SetLevel("debug")
@@ -29,7 +30,8 @@ func main() {
 	app.Post("/getGoods", controller.GetGoods)
 	app.Post("/addSuggestion", controller.AddSuggestion)
 	app.Post("/getUserInfo", controller.GetUserInfo)
-	app.Post("updateUserInfo", controller.UpdateUserInfo)
+	app.Post("/updateUserInfo", controller.UpdateUserInfo)
+	app.Post("/getGoodsDetail", controller.GetGoodsDetail)
 	// to start a new server listening at :80 and redirects
 	// to the secure address, then:
 	//target, _ := url.Parse("https://127.0.0.1:443")
@@ -38,6 +40,7 @@ func main() {
 	//// start the server (HTTPS) on port 443, this is a blocking func,
 	//// you can use iris.AutoTLS for letsencrypt if you want so.
 	app.Run(iris.TLS("0.0.0.0:443", "neumark.pem", "neumark.key"))
+
 
 	// app.Run(iris.Addr(":80"), iris.WithoutServerError(iris.ErrServerClosed))
 }

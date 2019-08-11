@@ -30,8 +30,9 @@ type User struct {
 	LoginAt time.Time
 	CreatedAt time.Time
 
-	Goods_ []Goods
-	Comments []Comment
-	Buys []Buy
+	Sells []Sell	`gorm:"FOREIGNKEY:UserID;ASSOCIATION_FOREIGNKEY:ID"`
+	Comments []Comment `gorm:"FOREIGNKEY:UserID;ASSOCIATION_FOREIGNKEY:ID"`
+	Buys []Buy		`gorm:"FOREIGNKEY:UserID;ASSOCIATION_FOREIGNKEY:ID"`
+	Collects []Collect `gorm:"FOREIGNKEY:UserID;ASSOCIATION_FOREIGNKEY:ID"`
 }
 
