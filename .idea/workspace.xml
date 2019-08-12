@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33025bdd-3392-43c6-a979-3b650ed649a8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/controller/collect.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/collect.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/goods.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/goods.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/comment.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/comment.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,8 +59,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/controller/goods.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="58" column="4" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
+            <state relative-caret-position="299">
+              <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
               <folding>
                 <element signature="e#20#89#0" expanded="true" />
               </folding>
@@ -274,7 +272,7 @@
     <frame x="2203" y="38" width="1597" height="1003" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15041962" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15041962" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -288,7 +286,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.065774806" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.47826087" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -493,8 +491,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/goods.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="58" column="4" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
+        <state relative-caret-position="299">
+          <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
           <folding>
             <element signature="e#20#89#0" expanded="true" />
           </folding>

@@ -54,9 +54,8 @@ func GetGoods(ctx iris.Context){
 
 	for i := 0; i < len(goods); i++ {
 		models.Db.Where("goods_id = ?", goods[i].ID).Find(&goods[i].Comments)
+		models.Db.Where("goods_id = ?", goods[i].ID).Find(&goods[i].Collects)
 	}
-
-
 
 	ctx.JSON(goods)
 }
