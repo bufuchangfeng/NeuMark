@@ -7,5 +7,5 @@ type Collect struct{
 	ID int `gorm:primary_key`
 	UserID int
 	GoodsID int
-	Time time.Time
+	CreatedAt time.Time
 }
