@@ -48,9 +48,15 @@ func GetGoods(ctx iris.Context){
 	page_sizeint, _ := strconv.Atoi(page_size)
 	if category_id == "-1"{
 		models.Db.Offset(pageint * page_sizeint).Limit(page_size).Order("id desc").Find(&goods)
-	}else{
+	}else {
 		models.Db.Where("category_id = ?", category_id).Offset(pageint * page_sizeint).Limit(page_size).Order("id desc").Find(&goods)
 	}
+
+	for i := 0; i < len(goods); i++ {
+		models.Db.Where("goods_id = ?", goods[i].ID).Find(&goods[i].Comments)
+	}
+
+
 
 	ctx.JSON(goods)
 }

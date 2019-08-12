@@ -12,5 +12,5 @@ type Comment struct{
 	UserID int
 	GoodsID int
 	Content string
-	Time time.Time
+	CreatedAt time.Time
 }
