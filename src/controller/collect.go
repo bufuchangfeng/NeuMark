@@ -25,7 +25,7 @@ func GetCollects(ctx iris.Context){
 
 	models.Db.Where("user_id = ?", user_id).Find(&collects)
 
-	var goods []models.Goods
+	var goods [20]models.Goods
 	for i := 0; i < len(collects); i++ {
 		models.Db.Where("goods_id = ?", collects[i].GoodsID).Find(&goods[i])
 		models.Db.Where("goods_id = ?", goods[i].ID).Find(&goods[i].Comments)
