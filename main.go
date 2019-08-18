@@ -34,6 +34,9 @@ func main() {
 	app.Post("/getGoodsDetail", controller.GetGoodsDetail)
 	app.Post("/addCollect", controller.AddCollect)
 	app.Post("/getCollects", controller.GetCollects)
+	app.Post("/getSells", controller.GetSells)
+
+
 	// to start a new server listening at :80 and redirects
 	// to the secure address, then:
 	//target, _ := url.Parse("https://127.0.0.1:443")
