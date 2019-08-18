@@ -17,3 +17,20 @@ func AddCollect(ctx iris.Context){
 		models.Db.Create(collect)
 	}
 }
+
+func GetCollects(ctx iris.Context){
+	user_id, _ := strconv.Atoi(ctx.FormValue("user_id"))
+
+	var collects []models.Collect
+
+	models.Db.Where("user_id = ?", user_id).Find(&collects)
+
+	var goods []models.Goods
+	for i := 0; i < len(collects); i++ {
+		models.Db.Where("goods_id = ?", collects[i].GoodsID).Find(&goods[i])
+		models.Db.Where("goods_id = ?", goods[i].ID).Find(&goods[i].Comments)
+		models.Db.Where("goods_id = ?", goods[i].ID).Find(&goods[i].Collects)
+	}
+
+	ctx.JSON(goods)
+}
