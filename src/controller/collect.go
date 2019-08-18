@@ -1,9 +1,10 @@
 package controller
 
 import (
+	"../models"
+	"fmt"
 	"github.com/kataras/iris"
 	"strconv"
-	"../models"
 	"time"
 )
 
@@ -25,9 +26,13 @@ func GetCollects(ctx iris.Context){
 
 	models.Db.Where("user_id = ?", user_id).Find(&collects)
 
+	fmt.Println(collects)
+
 	var goods [20]models.Goods
 	for i := 0; i < len(collects); i++ {
 		models.Db.Where("goods_id = ?", collects[i].GoodsID).Find(&goods[i])
+
+		fmt.Println(goods[i])
 		models.Db.Where("goods_id = ?", goods[i].ID).Find(&goods[i].Comments)
 		models.Db.Where("goods_id = ?", goods[i].ID).Find(&goods[i].Collects)
 	}
