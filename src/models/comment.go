@@ -9,8 +9,11 @@ import "time"
 
 type Comment struct{
 	ID int `gorm:primary_key`
-	UserID int
+	Avatar string
+	NickName string
 	GoodsID int
 	Content string
+	Xcomment Comment
+	XID	int
 	CreatedAt time.Time
 }

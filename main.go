@@ -35,6 +35,7 @@ func main() {
 	app.Post("/addCollect", controller.AddCollect)
 	app.Post("/getCollects", controller.GetCollects)
 	app.Post("/getSells", controller.GetSells)
+	app.Post("addComment", controller.AddComment)
 
 
 	// to start a new server listening at :80 and redirects
