@@ -13,7 +13,8 @@ type Comment struct{
 	NickName string
 	GoodsID int
 	Content string
-	Xcomment Comment
+	Xuser string
+	Xcontent string
 	XID	int
 	CreatedAt time.Time
 }
