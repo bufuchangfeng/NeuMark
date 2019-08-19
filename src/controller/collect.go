@@ -12,8 +12,8 @@ func AddCollect(ctx iris.Context){
 	user_id, _ := strconv.Atoi(ctx.FormValue("user_id"))
 	goods_id, _ := strconv.Atoi(ctx.FormValue("goods_id"))
 
-	collect := &models.Collect{UserID:user_id, GoodsID:goods_id}
-	models.Db.First(collect)
+	collect := &models.Collect{}
+	models.Db.Where("user_id = ? AND goods_id = ?", user_id, goods_id).Find(collect)
 	fmt.Println(collect)
 	if !(collect.ID > 0){
 		collect = &models.Collect{UserID:user_id, GoodsID:goods_id, CreatedAt:time.Now()}
