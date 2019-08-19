@@ -18,3 +18,21 @@ func AddComment(ctx iris.Context){
 
 	models.Db.Create(comment)
 }
+
+func GetComments(ctx iris.Context) {
+	goods_id, _ := strconv.Atoi(ctx.FormValue("goods_id"))
+	var comments []models.Comment
+	models.Db.Where("goods_id = ?", goods_id).Find(&comments)
+
+	for i := 0; i < len(comments); i++ {
+		if comments[i].XID != -1 {
+			c := &models.Comment{ID:comments[i].XID}
+			models.Db.First(c)
+
+			comments[i].Xuser = c.NickName
+			comments[i].Xcontent = c.Content
+		}
+	}
+
+	ctx.JSON(comments)
+}

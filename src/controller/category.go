@@ -18,5 +18,7 @@ func GetSubCategory(ctx iris.Context){
 	var categories []models.Category
 
 	models.Db.Find(&categories, "parent_id = ?", parentId)
+
+
 	ctx.JSON(categories)
 }
