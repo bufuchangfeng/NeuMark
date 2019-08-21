@@ -27,3 +27,11 @@ func GetSells(ctx iris.Context){
 
 	ctx.JSON(goods)
 }
+
+func DeleteSell(ctx iris.Context){
+	goods_id, _ := strconv.Atoi(ctx.FormValue("goods_id"))
+
+	models.Db.Where("goods_id = ?", goods_id).Delete(&models.Sell{})
+	models.Db.Where("goods_id = ?", goods_id).Delete(&models.Collect{})
+	models.Db.Where("id = ?", goods_id).Delete(&models.Goods{})
+}

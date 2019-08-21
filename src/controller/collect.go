@@ -8,6 +8,15 @@ import (
 	"time"
 )
 
+func DeleteCollect(ctx iris.Context){
+	user_id, _ := strconv.Atoi(ctx.FormValue("user_id"))
+	goods_id, _ := strconv.Atoi(ctx.FormValue("goods_id"))
+
+	collect := &models.Collect{UserID:user_id, GoodsID:goods_id}
+	models.Db.Delete(collect)
+}
+
+
 func AddCollect(ctx iris.Context){
 	user_id, _ := strconv.Atoi(ctx.FormValue("user_id"))
 	goods_id, _ := strconv.Atoi(ctx.FormValue("goods_id"))
