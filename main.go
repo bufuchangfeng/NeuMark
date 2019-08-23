@@ -39,6 +39,7 @@ func main() {
 	app.Post("/getComments", controller.GetComments)
 	app.Post("/deleteCollect", controller.DeleteCollect)
 	app.Post("/deleteSell", controller.DeleteSell)
+	app.Post("/search", controller.Search)
 
 	// to start a new server listening at :80 and redirects
 	// to the secure address, then:
