@@ -18,7 +18,7 @@ func Search(ctx iris.Context){
 
 	var goods []models.Goods
 
-	models.Db.Where("name like  ? OR description like ?", content).Offset(pageint * page_sizeint).Limit(page_size).Order("id desc").Find(&goods)
+	models.Db.Where("name like  ? OR description like ?", content, content).Offset(pageint * page_sizeint).Limit(page_size).Order("id desc").Find(&goods)
 
 	for i := 0; i < len(goods); i++ {
 		models.Db.Where("goods_id = ?", goods[i].ID).Find(&goods[i].Comments)
