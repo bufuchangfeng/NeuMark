@@ -129,7 +129,7 @@ func NEULogin(id, password string)(u models.User) {
 
 		tempuser := models.User{}
 
-		models.Db.Where("sid = ?", id).First(&tempuser)
+		models.Db.Where("sid = ?", id).Find(&tempuser)
 
 		if tempuser.Name != "" && tempuser.Grade != ""{
 			return tempuser
