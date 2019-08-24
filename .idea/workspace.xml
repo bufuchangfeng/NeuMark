@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="33025bdd-3392-43c6-a979-3b650ed649a8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/search.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/search.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/user.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,48 +26,12 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/controller/search.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="20" column="74" selection-start-line="20" selection-start-column="74" selection-end-line="20" selection-end-column="74" />
-              <folding>
-                <element signature="e#20#59#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/models/goods.go">
+        <entry file="file://$PROJECT_DIR$/src/controller/user.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="646">
-              <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/goods.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="59" column="19" lean-forward="true" selection-start-line="54" selection-start-column="4" selection-end-line="59" selection-end-column="19" />
-              <folding>
-                <element signature="e#20#89#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="559">
-              <caret line="41" column="41" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
-              <folding>
-                <element signature="e#14#178#0" expanded="true" />
-              </folding>
+              <caret line="40" column="46" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -103,12 +67,11 @@
         <option value="$PROJECT_DIR$/src/models/image.go" />
         <option value="$PROJECT_DIR$/src/controller/image.go" />
         <option value="$PROJECT_DIR$/src/lib/neu/bind.go" />
-        <option value="$PROJECT_DIR$/../Desktop/hello.go" />
+        <option value="$USER_HOME$/Desktop/hello.go" />
         <option value="$PROJECT_DIR$/src/lib/hdu/hdubind.go" />
         <option value="$PROJECT_DIR$/src/models/suggestion.go" />
         <option value="$PROJECT_DIR$/src/controller/suggestion.go" />
         <option value="$PROJECT_DIR$/src/lib/neu/neubind.go" />
-        <option value="$PROJECT_DIR$/src/controller/user.go" />
         <option value="$PROJECT_DIR$/src/models/user.go" />
         <option value="$PROJECT_DIR$/src/models/sell.go" />
         <option value="$PROJECT_DIR$/src/models/buy.go" />
@@ -123,24 +86,24 @@
         <option value="$PROJECT_DIR$/src/controller/collect.go" />
         <option value="$PROJECT_DIR$/src/lib/ucas.go" />
         <option value="$PROJECT_DIR$/src/lib/ucas/ucas.go" />
-        <option value="$PROJECT_DIR$/../Desktop/ucas.go" />
         <option value="$PROJECT_DIR$/main.go" />
         <option value="$PROJECT_DIR$/src/controller/search.go" />
+        <option value="$USER_HOME$/Desktop/ucas.go" />
+        <option value="$PROJECT_DIR$/src/controller/user.go" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="26" />
-    <option name="y" value="67" />
-    <option name="width" value="1422" />
-    <option name="height" value="951" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="210" />
+    <option name="y" value="9" />
+    <option name="width" value="1689" />
+    <option name="height" value="1051" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -170,13 +133,14 @@
               <item name="NeuMark" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="ucas" type="462c0819:PsiDirectoryNode" />
+              <item name="neu" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="NeuMark" type="b2602c69:ProjectViewProjectNode" />
               <item name="NeuMark" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="ucas" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="NeuMark" type="b2602c69:ProjectViewProjectNode" />
@@ -186,6 +150,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -199,7 +164,7 @@
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/ucas.go" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -228,10 +193,10 @@
     </option>
   </component>
   <component name="ToolWindowManager">
-    <frame x="26" y="67" width="1422" height="951" extended-state="0" />
+    <frame x="65" y="-6" width="1855" height="1086" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14992721" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11898174" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -244,8 +209,8 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.38224852" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007257" side_tool="true" weight="0.35506403" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4992743" visible="true" weight="0.030612245" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -278,7 +243,7 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/controller.go" />
-    <entry file="file://$PROJECT_DIR$/../go/src/github.com/jinzhu/gorm/main.go">
+    <entry file="file://$USER_HOME$/go/src/github.com/jinzhu/gorm/main.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="123">
           <caret line="350" selection-start-line="350" selection-end-line="350" />
@@ -293,7 +258,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Desktop/hello.go" />
+    <entry file="file://$USER_HOME$/Desktop/hello.go" />
     <entry file="file://$PROJECT_DIR$/src/lib/hdu/des.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -380,13 +345,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/user.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -408,16 +366,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="589">
           <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/neu/neubind.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="100" column="24" selection-start-line="100" selection-start-column="24" selection-end-line="100" selection-end-column="24" />
-          <folding>
-            <element signature="e#13#133#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -445,21 +393,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Desktop/ucas.go" />
-    <entry file="file://$PROJECT_DIR$/src/lib/ucas/ucas.go">
+    <entry file="file://$PROJECT_DIR$/src/controller/search.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" selection-start-column="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="41" column="41" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
-          <folding>
-            <element signature="e#14#178#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="304">
+          <caret line="20" column="74" selection-start-line="20" selection-start-column="74" selection-end-line="20" selection-end-column="74" />
         </state>
       </provider>
     </entry>
@@ -472,21 +409,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/goods.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="59" column="19" lean-forward="true" selection-start-line="54" selection-start-column="4" selection-end-line="59" selection-end-column="19" />
+        <state relative-caret-position="648">
+          <caret line="59" column="19" selection-start-line="54" selection-start-column="4" selection-end-line="59" selection-end-column="19" />
           <folding>
             <element signature="e#20#89#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/search.go">
+    <entry file="file://$PROJECT_DIR$/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="20" column="74" selection-start-line="20" selection-start-column="74" selection-end-line="20" selection-end-column="74" />
+        <state relative-caret-position="648">
+          <caret line="41" column="41" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
           <folding>
-            <element signature="e#20#59#0" expanded="true" />
+            <element signature="e#14#178#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/ucas/ucas.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" lean-forward="true" selection-start-column="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/neu/neubind.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-924">
+          <caret line="60" lean-forward="true" selection-start-line="41" selection-start-column="4" selection-end-line="60" />
+          <folding>
+            <element signature="e#13#133#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/ucas.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/user.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="40" column="46" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
         </state>
       </provider>
     </entry>
