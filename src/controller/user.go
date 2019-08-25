@@ -38,6 +38,11 @@ func UpdateUserInfo(ctx iris.Context){
 
 
 	user_id_int, _ := strconv.Atoi(user_id)
+
+	if user_id_int == 0{
+		ctx.JSON("fail")
+		return
+	}
 	user := models.User{ID:user_id_int}
 	models.Db.Where("id = ?", user_id_int).Find(&user)
 
