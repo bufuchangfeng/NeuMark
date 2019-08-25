@@ -9,7 +9,6 @@ import (
 	"strconv"
 	"strings"
 	"../../models"
-	"time"
 )
 
 func NEULogin(id, password string)(u models.User) {
