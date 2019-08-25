@@ -28,7 +28,7 @@ func AddGoods(ctx iris.Context){
 	// user category 学习gorm之后再回来修改
 	models.Db.Create(goods)
 
-	sell := &models.Sell{UserID:userID, GoodsID:goods.ID, CreatedAt:time.Now()}
+	sell := &models.Sell{UserID:userID, GoodsID:goods.ID}
 	models.Db.Create(sell)
 
 	var dict = map[string]int{"goods_id":goods.ID}

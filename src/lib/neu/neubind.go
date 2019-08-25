@@ -134,7 +134,7 @@ func NEULogin(id, password string)(u models.User) {
 		if tempuser.Name != "" && tempuser.Grade != ""{
 			return tempuser
 		} else {
-			user := models.User{Name:name, Sex:sex, Sid:id, Grade:grade, Institute:institute, Major:major, Campus:campus, Class:class, CreatedAt:time.Now(), LoginAt:time.Now()}
+			user := models.User{Name:name, Sex:sex, Sid:id, Grade:grade, Institute:institute, Major:major, Campus:campus, Class:class}
 			models.Db.Create(&user)
 			return user
 		}
