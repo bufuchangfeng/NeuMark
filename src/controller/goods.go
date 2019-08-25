@@ -65,9 +65,9 @@ func GetGoodsDetail(ctx iris.Context){
 
 	goods := &models.Goods{}
 
-	models.Db.Where("id = ?", goods_id).First(goods)
+	models.Db.Where("id = ?", goods_id).Find(goods)
 
-	models.Db.Where("id = ?", goods.UserID).First(&goods.User)
+	models.Db.Where("id = ?", goods.UserID).Find(&goods.User)
 
 	models.Db.Where("goods_id = ?", goods_id).Find(&goods.Images)
 
