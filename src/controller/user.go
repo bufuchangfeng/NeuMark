@@ -41,7 +41,8 @@ func UpdateUserInfo(ctx iris.Context){
 	user := models.User{ID:user_id_int}
 	models.Db.Where("id = ?", user_id_int).Find(&user)
 
-	fmt.Println(user_id_int, user)
+	fmt.Println("hello")
+	fmt.Println(user_id_int, user, wechat, phone, qq)
 
 	models.Db.Model(&user).Updates(map[string]interface{}{"phone": phone, "we_chat": wechat, "qq": qq})
 }
