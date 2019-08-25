@@ -40,7 +40,7 @@ func UpdateUserInfo(ctx iris.Context){
 	user_id_int, _ := strconv.Atoi(user_id)
 
 	if user_id_int == 0{
-		ctx.JSON("fail")
+		ctx.WriteString("fail")
 		return
 	}
 	user := models.User{ID:user_id_int}
