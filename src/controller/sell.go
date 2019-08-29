@@ -16,7 +16,7 @@ func GetSells(ctx iris.Context){
 
 	fmt.Println(sells)
 
-	var goods [20]models.Goods
+	var goods [30]models.Goods
 	for i := 0; i < len(sells); i++ {
 		models.Db.Where("id = ?", sells[i].GoodsID).Find(&goods[i])
 

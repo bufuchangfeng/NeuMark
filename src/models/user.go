@@ -20,6 +20,9 @@ type User struct {
 	Campus string
 	Class string
 
+	// for shop
+	Password string
+	CategoryID int
 	// 头像
 	// 用户状态
 
@@ -34,5 +37,8 @@ type User struct {
 	Comments []Comment `gorm:"FOREIGNKEY:UserID;ASSOCIATION_FOREIGNKEY:ID"`
 	Buys []Buy		`gorm:"FOREIGNKEY:UserID;ASSOCIATION_FOREIGNKEY:ID"`
 	Collects []Collect `gorm:"FOREIGNKEY:UserID;ASSOCIATION_FOREIGNKEY:ID"`
+
+	Usertype string
+
 }
 

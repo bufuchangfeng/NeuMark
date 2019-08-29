@@ -11,12 +11,17 @@ import (
 func Bind(ctx iris.Context){
 	sid := ctx.FormValue("sid")
 	pwd := ctx.FormValue("pwd")
+	usertype := ctx.FormValue("usertype")
 
-	fmt.Println(sid, pwd)
+	// fmt.Println(sid, pwd)
+	if "1" == usertype {
+		user := neu.NEULogin(sid, pwd)
+		ctx.JSON(user)
 
-	user := neu.NEULogin(sid, pwd)
-
-	ctx.JSON(user)
+	} else if "2" == usertype{
+		user := neu.ShopBind(sid, pwd)
+		ctx.JSON(user)
+	}
 }
 
 
