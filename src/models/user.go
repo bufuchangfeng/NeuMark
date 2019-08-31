@@ -1,7 +1,5 @@
 package models
 
-import "time"
-
 //用户
 //学号 姓名 性别 年级 院系 专业 校区 班级 头像
 //用户状态		 用法：0 / 1      禁止 / 允许
@@ -29,9 +27,6 @@ type User struct {
 	Phone string
 	WeChat string
 	QQ	string
-
-	LoginAt time.Time
-	CreatedAt time.Time
 
 	Sells []Sell	`gorm:"FOREIGNKEY:UserID;ASSOCIATION_FOREIGNKEY:ID"`
 	Comments []Comment `gorm:"FOREIGNKEY:UserID;ASSOCIATION_FOREIGNKEY:ID"`
