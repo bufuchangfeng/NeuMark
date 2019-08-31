@@ -135,6 +135,8 @@ func NEULogin(id, password string)(u models.User) {
 		} else {
 			user := models.User{Name:name, Sex:sex, Sid:id, Grade:grade, Institute:institute, Major:major, Campus:campus, Class:class}
 			models.Db.Create(&user)
+			models.Db.Where("sid = ?", id).Find(&user)
+			fmt.Println(user)
 			return user
 		}
 	}
