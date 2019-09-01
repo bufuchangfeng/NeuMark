@@ -11,7 +11,7 @@ func GetMessages(ctx iris.Context){
 	userid, _ := strconv.Atoi(ctx.FormValue("userid"))
 	fmt.Println(userid)
 	var messages []models.Message
-	models.Db.Where("x_user_id = ?", userid).Find(&messages)
+	models.Db.Where("x_user_id = ?", userid).Order("id desc").Find(&messages)
 
 	fmt.Println(messages)
 
