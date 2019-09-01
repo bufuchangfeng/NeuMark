@@ -1,6 +1,7 @@
 package controller
 
 import (
+	"fmt"
 	"github.com/kataras/iris"
 	"../models"
 	"strconv"
@@ -19,7 +20,7 @@ func AddComment(ctx iris.Context){
 	l,_ := time.LoadLocation("Asia/Shanghai")
 	comment := &models.Comment{Avatar:avatar, NickName:nickname, GoodsID:goods_id, Content:content, XID:xid, UserID:user_id,CreatedAt:time.Now().In(l)}
 	models.Db.Create(comment)
-
+	fmt.Println(time.Now().In(l))
 	// 添加两条消息
 	// 第一条是卖家
 	// 根据GoodsID找到卖家的ID
