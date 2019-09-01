@@ -24,7 +24,9 @@ func AddGoods(ctx iris.Context){
 
 	categoryID, _ := strconv.Atoi(ctx.FormValue("category_id"))
 
-	goods := &models.Goods{Name:name, Description:description, Price:price, CreatedAt:time.Now(), CategoryID:categoryID, UserID:userID}
+
+	l,_ := time.LoadLocation("Asia/Shanghai")
+	goods := &models.Goods{Name:name, Description:description, Price:price, CreatedAt:time.Now().In(l), CategoryID:categoryID, UserID:userID}
 	// user category 学习gorm之后再回来修改
 	models.Db.Create(goods)
 

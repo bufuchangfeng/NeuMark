@@ -4,7 +4,7 @@ import (
 	"github.com/kataras/iris"
 	"../models"
 	"strconv"
-
+	"time"
 )
 
 func AddComment(ctx iris.Context){
@@ -16,7 +16,8 @@ func AddComment(ctx iris.Context){
 	user_id, _ := strconv.Atoi(ctx.FormValue("userid"))
 
 
-	comment := &models.Comment{Avatar:avatar, NickName:nickname, GoodsID:goods_id, Content:content, XID:xid, UserID:user_id}
+	l,_ := time.LoadLocation("Asia/Shanghai")
+	comment := &models.Comment{Avatar:avatar, NickName:nickname, GoodsID:goods_id, Content:content, XID:xid, UserID:user_id,CreatedAt:time.Now().In(l)}
 	models.Db.Create(comment)
 
 	// 添加两条消息
