@@ -16,5 +16,6 @@ type Comment struct{
 	Xuser string
 	Xcontent string
 	XID	int
+	UserID int
 	CreatedAt time.Time
 }

@@ -11,7 +11,7 @@ import (
 func main() {
 
 	models.Db.AutoMigrate(&models.User{}, &models.Category{}, &models.Goods{}, &models.Image{},
-	&models.Suggestion{}, &models.Sell{}, &models.Buy{}, &models.Collect{}, &models.Comment{})
+	&models.Suggestion{}, &models.Sell{}, &models.Buy{}, &models.Collect{}, &models.Comment{}, &models.Message{})
 
 	app := iris.New()
 	app.Logger().SetLevel("debug")
@@ -41,6 +41,9 @@ func main() {
 	app.Post("/deleteSell", controller.DeleteSell)
 	app.Post("/search", controller.Search)
 	app.Get("/checkSignature", controller.CheckSignature)
+	app.Post("/getMessages", controller.GetMessages)
+	app.Post("/delMessage", controller.DelMessage)
+
 
 	// to start a new server listening at :80 and redirects
 	// to the secure address, then:
