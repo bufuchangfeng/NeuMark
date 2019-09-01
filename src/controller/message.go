@@ -4,14 +4,18 @@ import (
 	"../models"
 	"github.com/kataras/iris"
 	"strconv"
+	"fmt"
 )
 
 func GetMessages(ctx iris.Context){
 	userid, _ := strconv.Atoi(ctx.FormValue("userid"))
-	var messgaes []models.Message
-	models.Db.Where("x_user_id = ?", userid).Find(&messgaes)
+	fmt.Println(userid)
+	var messages []models.Message
+	models.Db.Where("x_user_id = ?", userid).Find(&messages)
 
-	ctx.JSON(messgaes)
+	fmt.Println(messages)
+
+	ctx.JSON(messages)
 }
 
 func DelMessage(ctx iris.Context){
