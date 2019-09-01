@@ -20,5 +20,5 @@ func GetMessages(ctx iris.Context){
 
 func DelMessage(ctx iris.Context){
 	id, _ := strconv.Atoi(ctx.FormValue("id"))
-	models.Db.Where("id", id).Delete(&models.Message{})
+	models.Db.Where("id = ?", id).Delete(&models.Message{})
 }
